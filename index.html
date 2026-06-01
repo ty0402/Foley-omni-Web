@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Foley-Omni project page">
+  <meta name="theme-color" content="#2563eb">
+  <title>Foley-Omni: A Unified Multimodal Generation Model from Task-Level Audio Synthesis to Complete Video Soundtrack</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="static/js/index.js"></script>
+</head>
+
+<body>
+  <button class="scroll-to-top" type="button" onclick="scrollToTop()" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                Foley-Omni: A Unified Multimodal Generation Model from Task-Level Audio Synthesis to Complete Video Soundtrack
+              </h1>
+              <p class="hero-subtitle">Foley-Omni not only supports TTA, TTM, TTS, V2A, and VisualTTS, but also generates a complete video soundtrack in a single pass, jointly producing video-synchronized sound effects, speech, and music.</p>
+
+              <div class="external-icon-links" aria-label="Project links">
+                <a class="icon-link" href="https://github.com/ty0402/Foley-omni-Web" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.648.5.5 5.648.5 12a11.5 11.5 0 0 0 7.86 10.915c.575.106.785-.25.785-.556 0-.274-.01-1-.016-1.962-3.197.695-3.872-1.54-3.872-1.54-.523-1.328-1.277-1.682-1.277-1.682-1.044-.714.079-.699.079-.699 1.154.081 1.761 1.185 1.761 1.185 1.026 1.759 2.692 1.251 3.348.957.104-.743.402-1.252.731-1.54-2.552-.29-5.236-1.276-5.236-5.682 0-1.255.449-2.282 1.184-3.086-.118-.291-.513-1.463.112-3.05 0 0 .966-.309 3.166 1.179a10.98 10.98 0 0 1 5.764 0c2.198-1.488 3.163-1.18 3.163-1.18.627 1.588.232 2.76.114 3.051.737.804 1.182 1.831 1.182 3.086 0 4.417-2.688 5.389-5.248 5.673.413.355.781 1.055.781 2.126 0 1.536-.014 2.775-.014 3.153 0 .309.207.668.79.555A11.503 11.503 0 0 0 23.5 12C23.5 5.648 18.352.5 12 .5Z"/></svg>
+                </a>
+                <a class="icon-link is-disabled" href="#" aria-label="arXiv" title="arXiv">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.95 18.05 3.5 6h2.42l2.2 8.43L10.53 6h2.98l2.45 8.43L18.18 6h2.32l-3.4 12.05h-2.27L12 9.18l-2.82 8.87H6.95Z"/></svg>
+                </a>
+                <a class="icon-link" href="https://huggingface.co/CocoBro/Foley-Omni" target="_blank" rel="noopener" aria-label="Hugging Face" title="Hugging Face">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.15 9.32a1.28 1.28 0 1 1 0-2.56 1.28 1.28 0 0 1 0 2.56Zm9.7 0a1.28 1.28 0 1 1 0-2.56 1.28 1.28 0 0 1 0 2.56ZM12 18.9c-4.05 0-7.34-2.86-7.34-6.39 0-1.79.86-3.4 2.26-4.56l-.17-.93a.72.72 0 0 1 1.2-.65l1 .95A8.3 8.3 0 0 1 12 6.75c1.12 0 2.2.2 3.19.56l1-.94a.72.72 0 0 1 1.2.64l-.17.93a5.86 5.86 0 0 1 2.12 4.47c0 3.63-3.28 6.49-7.34 6.49Zm-2.93-4.53c.63.86 1.7 1.43 2.93 1.43s2.3-.57 2.93-1.43a.9.9 0 1 1 1.46 1.05A5.5 5.5 0 0 1 12 17.61a5.5 5.5 0 0 1-4.39-2.19.9.9 0 0 1 1.46-1.05Z"/></svg>
+                </a>
+              </div>
+
+              <div class="publication-links">
+                <span class="link-block">
+                  <a class="button is-normal is-rounded" href="#featured-demo">Demo</a>
+                </span>
+                <span class="link-block">
+                  <a class="button is-normal is-rounded" href="#complete-soundtrack">Soundtrack</a>
+                </span>
+                <span class="link-block">
+                  <a class="button is-normal is-rounded" href="#v2a">V2A</a>
+                </span>
+                <span class="link-block">
+                  <a class="button is-normal is-rounded" href="#visualtts">VisualTTS</a>
+                </span>
+                <span class="link-block">
+                  <a class="button is-normal is-rounded" href="#text-conditioned-generation">Text-conditioned</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured-demo-section" id="featured-demo">
+      <div class="container is-max-desktop featured-demo-container">
+        <div class="featured-demo-head">
+          <h2 class="title is-3 has-text-centered section-title">Featured Demo</h2>
+        </div>
+        <div class="featured-demo-card">
+          <video controls preload="metadata" playsinline>
+            <source src="static/foley_omni/showcase/featured_demo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soundtrack-section" id="complete-soundtrack">
+      <div class="container results-container">
+        <div class="soundtrack-header">
+          <h2 class="title is-3 has-text-centered section-title">Complete Video Soundtrack</h2>
+          <div class="notice-text has-text-centered soundtrack-notice">
+            All videos below are re-dubbed by Foley-Omni.
+          </div>
+        </div>
+
+        <section class="demo-group">
+          <div class="demo-group-title">Foley-Omni on VEO3 Videos</div>
+          <div class="demo-grid demo-grid-wide">
+              <article class="demo-card">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/d4ca83fdd042c8910d3358151dc4e6cd_103_2.mp4" type="video/mp4">
+                </video>
+                <div class="demo-meta">
+                  <p class="demo-caption"><span class="meta-label-inline meta-label-audio">[AUDIO]</span> A soft female voice with a crisp soda-can open, bright fizz, pouring sounds, and light background music.<br><span class="meta-label-inline meta-label-word">[WORD]</span> This drink sounds really fresh when it opens.<br><span class="meta-label-inline meta-label-music">[MUSIC]</span> Light piano and acoustic guitar background music.</p>
+                </div>
+              </article>
+
+              <article class="demo-card">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/key_board_2_103_0.mp4" type="video/mp4">
+                </video>
+                <div class="demo-meta">
+                  <p class="demo-caption"><span class="meta-label-inline meta-label-audio">[AUDIO]</span> Mechanical keyboard typing, followed by a clear female voice, with soft background music.<br><span class="meta-label-inline meta-label-word">[WORD]</span> Hi, and welcome to the channel<br><span class="meta-label-inline meta-label-music">[MUSIC]</span> Soft piano and ambient lifestyle background music.</p>
+                </div>
+              </article>
+
+              <article class="demo-card">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/Generate_an_second_realistic_103_0_103_5.mp4" type="video/mp4">
+                </video>
+                <div class="demo-meta">
+                  <p class="demo-caption"><span class="meta-label-inline meta-label-audio">[AUDIO]</span> A clear elderly female voice speaks over sharp knife chops on a wooden cutting board, followed by louder sizzling as chopped green onions are dropped into a frying pan.<br><span class="meta-label-inline meta-label-word">[WORD]</span> I'll add this now.<br><span class="meta-label-inline meta-label-music">[MUSIC]</span> none</p>
+                </div>
+              </article>
+
+              <article class="demo-card">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/721ecf7c92d162bd2d74820f72f68d41_103_0.mp4" type="video/mp4">
+                </video>
+                <div class="demo-meta">
+                  <p class="demo-caption"><span class="meta-label-inline meta-label-audio">[AUDIO]</span> A clear, neutral English-speaking voice with a car passing on a quiet urban street, soft tire rolling, and subtle daytime ambience.<br><span class="meta-label-inline meta-label-word">[WORD]</span> That car came by faster than I expected.<br><span class="meta-label-inline meta-label-music">[MUSIC]</span> none</p>
+                </div>
+              </article>
+          </div>
+        </section>
+
+        <section class="demo-group demo-group-bench">
+          <div class="demo-group-title">V2ST-Bench</div>
+          <div class="demo-grid">
+              <article class="demo-card">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/0p9c5Rb8XDU-Scene-008-2161-2629_frames=161-313_sim=96_103_6.mp4" type="video/mp4">
+                </video>
+                <div class="demo-meta">
+                  <p class="demo-caption"><span class="meta-label-inline meta-label-audio">[AUDIO]</span> A clear instructional female voice with rhythmic spoon-on-pot stirring sounds.<br><span class="meta-label-inline meta-label-word">[WORD]</span> ...and a yellow are totally combined. Okay. And then I'm gonna...<br><span class="meta-label-inline meta-label-music">[MUSIC]</span> none</p>
+                </div>
+              </article>
+
+              <article class="demo-card">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/7E2rx2kLPyA-Scene-005-3810-4670_frames=24-152_sim=0_103_2.mp4" type="video/mp4">
+                </video>
+                <div class="demo-meta">
+                  <p class="demo-caption"><span class="meta-label-inline meta-label-audio">[AUDIO]</span> A clear, casual male voice speaking followed by two distinct, rhythmic, high-pitched metallic clacks and slides of a firearm action being cycled.<br><span class="meta-label-inline meta-label-word">[WORD]</span> This piece of the AK, you can barely see it. So you open up the action...<br><span class="meta-label-inline meta-label-music">[MUSIC]</span> none</p>
+                </div>
+              </article>
+
+              <article class="demo-card">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/3ZwV-8rypUQ-Scene-007-7134-30270_frames=14137-14289_sim=94_103_2.mp4" type="video/mp4">
+                </video>
+                <div class="demo-meta">
+                  <p class="demo-caption"><span class="meta-label-inline meta-label-audio">[AUDIO]</span> A calm male voice with low boat-engine rumble and rhythmic water splashes.<br><span class="meta-label-inline meta-label-word">[WORD]</span> And it's a tough ride back in no matter what kind of a boat you're in.<br><span class="meta-label-inline meta-label-music">[MUSIC]</span> none</p>
+                </div>
+              </article>
+
+              <article class="demo-card">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/3VgIsRcXJoM-Scene-009-1203-525889_frames=42927-43079_sim=93_103_1.mp4" type="video/mp4">
+                </video>
+                <div class="demo-meta">
+                  <p class="demo-caption"><span class="meta-label-inline meta-label-audio">[AUDIO]</span> A casual female voice followed by loud sewing-machine buzzing and whirring.<br><span class="meta-label-inline meta-label-word">[WORD]</span> change this one's for the serger and then there's a light down there.<br><span class="meta-label-inline meta-label-music">[MUSIC]</span> none</p>
+                </div>
+              </article>
+              <article class="demo-card">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/music/6xQr-Frj8yA_1920x1080_full_video_022_A_00_103_4.mp4" type="video/mp4">
+                </video>
+                <div class="demo-meta">
+                  <p class="demo-caption"><span class="meta-label-inline meta-label-audio">[AUDIO]</span> none<br><span class="meta-label-inline meta-label-word">[WORD]</span> Um, all right, who are my role models? Uh, I would say my dad for one. Uh, I've always just looked up to him for his work ethic. When he came to<br><span class="meta-label-inline meta-label-music">[MUSIC]</span> A very subtle ambient underscore with soft sustained pads or a gentle repeating piano motif, creating a calm and unobtrusive backdrop.</p>
+                </div>
+              </article>
+
+              <article class="demo-card">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/music/ACty1qYo60Y_1920x1080_full_video_046_A_01_103_4.mp4" type="video/mp4">
+                </video>
+                <div class="demo-meta">
+                  <p class="demo-caption"><span class="meta-label-inline meta-label-audio">[AUDIO]</span> none<br><span class="meta-label-inline meta-label-word">[WORD]</span> What makes my body regenerate better, for example, in the night? And there comes simple things.<br><span class="meta-label-inline meta-label-music">[MUSIC]</span> Sustained airy synth pads with sparse piano or bell-like notes, creating a very slow, reflective atmosphere.</p>
+                </div>
+              </article>
+
+              <article class="demo-card">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/music/b9X8EbEzjlY_1920x1080_full_video_064_A_00_103_5.mp4" type="video/mp4">
+                </video>
+                <div class="demo-meta">
+                  <p class="demo-caption"><span class="meta-label-inline meta-label-audio">[AUDIO]</span> none<br><span class="meta-label-inline meta-label-word">[WORD]</span> Thanks for watching. If you like what you just saw, hit the subscribe button for more clips and full episodes.<br><span class="meta-label-inline meta-label-music">[MUSIC]</span> A gentle synthesized keyboard melody with a subtle electronic beat, keeping a relaxed medium tempo and a calm, pleasant mood.</p>
+                </div>
+              </article>
+
+              <article class="demo-card">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/music/XUKk0841DtA_1920x1080_full_video_046_B_01_103_0.mp4" type="video/mp4">
+                </video>
+                <div class="demo-meta">
+                  <p class="demo-caption"><span class="meta-label-inline meta-label-audio">[AUDIO]</span> none<br><span class="meta-label-inline meta-label-word">[WORD]</span> about how I feel about being called a YouTuber. You know, at first, I loved being called a YouTuber. I was like, this is my dream. I grew up watching YouTube. YouTubers are my movie stars.<br><span class="meta-label-inline meta-label-music">[MUSIC]</span> Soft arpeggiated piano chords with a faint atmospheric underscore, creating a slow and reflective mood.</p>
+                </div>
+              </article>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section hero is-light" id="v2a">
+      <div class="container results-container">
+        <h2 class="title is-3 has-text-centered section-title">V2A</h2>
+        <section class="demo-group">
+          <div class="demo-grid demo-grid-four">
+              <article class="demo-card demo-card-v2a">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/v2a/vta/__X4KaLQdJk_000010_103_4.mp4" type="video/mp4">
+                </video>
+              </article>
+
+              <article class="demo-card demo-card-v2a">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/v2a/vta/_BJ3x6LqnYg_000073_103_3.mp4" type="video/mp4">
+                </video>
+              </article>
+
+              <article class="demo-card demo-card-v2a">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/v2a/vta/_DGLk4D-leg_000018_103_2.mp4" type="video/mp4">
+                </video>
+              </article>
+
+              <article class="demo-card demo-card-v2a">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/v2a/vta/_jfv_ziZWII_000060_103_6.mp4" type="video/mp4">
+                </video>
+              </article>
+
+              <article class="demo-card demo-card-v2a">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/v2a/vta/_MBCVvbtdtI_000470_103_4.mp4" type="video/mp4">
+                </video>
+              </article>
+
+              <article class="demo-card demo-card-v2a">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/v2a/vta/0T39A4knSu4_000025_103_0.mp4" type="video/mp4">
+                </video>
+              </article>
+
+              <article class="demo-card demo-card-v2a">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/v2a/vta/1a-ODBWMUAE_000030_103_5.mp4" type="video/mp4">
+                </video>
+              </article>
+
+              <article class="demo-card demo-card-v2a">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/v2a/vta/1k0R3npPdKI_000252_103_4.mp4" type="video/mp4">
+                </video>
+              </article>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section" id="visualtts">
+      <div class="container results-container">
+        <h2 class="title is-3 has-text-centered section-title">VisualTTS</h2>
+        <section class="demo-group">
+          <div class="demo-group-title">GRID</div>
+          <div class="demo-grid demo-grid-four">
+              <article class="demo-card demo-card-plain">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/visualtts/grid/bbbp5p_103_4.mp4" type="video/mp4">
+                </video>
+                <div class="demo-meta">
+                  <p class="demo-caption"><span class="meta-label-inline meta-label-word">[WORD]</span> bin blue by p five please</p>
+                </div>
+              </article>
+
+              <article class="demo-card demo-card-plain">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/visualtts/grid/bbad6n_grid_103_5.mp4" type="video/mp4">
+                </video>
+                <div class="demo-meta">
+                  <p class="demo-caption"><span class="meta-label-inline meta-label-word">[WORD]</span> bin blue at d six now</p>
+                </div>
+              </article>
+
+              <article class="demo-card demo-card-plain">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/visualtts/grid/bbai6s_grid_103_7.mp4" type="video/mp4">
+                </video>
+                <div class="demo-meta">
+                  <p class="demo-caption"><span class="meta-label-inline meta-label-word">[WORD]</span> bin blue at i six soon</p>
+                </div>
+              </article>
+
+              <article class="demo-card demo-card-plain">
+                <video controls preload="metadata" playsinline>
+                  <source src="static/foley_omni/visualtts/grid/bbab9n_103_4.mp4" type="video/mp4">
+                </video>
+                <div class="demo-meta">
+                  <p class="demo-caption"><span class="meta-label-inline meta-label-word">[WORD]</span> bin blue at b nine now</p>
+                </div>
+              </article>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section" id="text-conditioned-generation">
+      <div class="container results-container">
+        <h2 class="title is-3 has-text-centered section-title">Text-conditioned Generation</h2>
+        <section class="demo-group">
+          <div class="audio-grid">
+            <article class="audio-card">
+              <audio controls preload="none">
+                <source src="static/foley_omni/text_conditioned/Pb6MqpdX5Jw_000040_0_103.wav" type="audio/wav">
+              </audio>
+              <p class="audio-card-text"><span class="meta-label-inline meta-label-audio">[AUDIO]</span> Clip-clops gallop as the wind blows and thunder cracks</p>
+            </article>
+
+            <article class="audio-card">
+              <audio controls preload="none">
+                <source src="static/foley_omni/text_conditioned/K-7Y8yhcUiw_000060_1_103.wav" type="audio/wav">
+              </audio>
+              <p class="audio-card-text"><span class="meta-label-inline meta-label-audio">[AUDIO]</span> A dog snoring loudly</p>
+            </article>
+
+            <article class="audio-card">
+              <audio controls preload="none">
+                <source src="static/foley_omni/text_conditioned/[WORDS]_Among_other_things_on_which_she_cast_her_e_103_6.wav" type="audio/wav">
+              </audio>
+              <p class="audio-card-text"><span class="meta-label-inline meta-label-word">[SPEECH]</span> Among other things on which she cast her eyes was a small crucifix of solid silver, standing on a cabinet near the window.</p>
+            </article>
+
+            <article class="audio-card">
+              <audio controls preload="none">
+                <source src="static/foley_omni/text_conditioned/[MUSIC]_A_classical_sounding_music_piece_which_sou_103_1.wav" type="audio/wav">
+              </audio>
+              <p class="audio-card-text"><span class="meta-label-inline meta-label-music">[MUSIC]</span> A classical sounding music piece which sounds like a music box being played through a tiny, distorted speaker of an ice cream truck. Low fidelity.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
