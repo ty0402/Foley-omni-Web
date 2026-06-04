@@ -33,30 +33,12 @@ body {
   margin-bottom: 0.65rem !important;
 }
 
-.publication-authors {
-  max-width: 980px;
-  margin: 0 auto 0.45rem;
-  color: #1f2937;
-  font-size: 1.05rem;
-  line-height: 1.8;
-}
-
-.author-block {
-  display: inline-block;
-  margin: 0 0.16rem;
-  white-space: nowrap;
-}
-
-.publication-affiliations {
+.hero-subtitle {
   max-width: 860px;
-  margin: 0 auto 0.75rem;
-  color: #5b6676;
-  font-size: 0.94rem;
-  line-height: 1.45;
-}
-
-.publication-affiliations div + div {
-  margin-top: 0.08rem;
+  margin: 0 auto 0.85rem;
+  color: #6b7280;
+  font-size: 1.06rem;
+  line-height: 1.72;
 }
 
 .project-action-links {
